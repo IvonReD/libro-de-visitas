@@ -6,19 +6,15 @@
   <title>Libro de Visitas</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="#" href="css/main.css">
 </head>
-
 <body>
   <h1 class="text-center">Libro de Visitas</h1>
-
-  <section>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-lg-12">
           <span>Comentarios Pasados:</span>
           <div id="comment-past">
             hola
@@ -26,45 +22,45 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <section>
     <div class="container">
       <div class="row">
         <h2 class="text-center">Agregar nuevo comentario</h2>
-        <div class="col-sm-12 col-sm-offset-2">
+        <div class="col-lg-12 col-md-offset-2">
           <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">Large</button>
-            <button type="button" class="btn btn-default">Medium</button>
-            <button type="button" class="btn btn-default">Small</button>
-            <button type="button" class="btn btn-default">Color de Texto</button>
-            <button type="button" class="btn btn-default">Color de Fondo</button>
-            <button type="button" class="btn btn-default">Izquierda</button>
-            <button type="button" class="btn btn-default">Centrar</button>
-            <button type="button" class="btn btn-default">Derecha</button>
+            <button type="button" class="btn btn-default" id="font-large">Large</button>
+            <button type="button" class="btn btn-default" id="font-medium">Medium</button>
+            <button type="button" class="btn btn-default" id="font-small">Small</button>
+            <button type="button" class="btn btn-default" id="color-text">Color de Texto</button>
+            <button type="button" class="btn btn-default" id="color">Color de Fondo</button>
+            <button type="button" class="btn btn-default" id="left-text">Izquierda</button>
+            <button type="button" class="btn btn-default" id="center-text">Centrar</button>
+            <button type="button" class="btn btn-default" id="right-text">Derecha</button>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-9 col-sm-offset-1">
+        <div class="col-lg-7 col-sm-offset-2">
           <form>
             <div class="form-group">
-
               <textarea class="form-control" rows="5" id="comment"></textarea>
             </div>
           </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
           <h3 class="text-center">Asi se veria tu comentario:</h3>
-
-          <div id="view">
-            <p class="text-center"> HoLA como estas</p>
+          <div>
+            <p class="text-center" id="text-out"> HoLA como estas</p>
           </div>
+
           <div class="btn-group" role="group" aria-label="...">
             <button type="button" class="btn btn-default" id="enviar">Enviar Comentario</button>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
