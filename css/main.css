@@ -1,12 +1,5 @@
 *{
   margin: 0;
   padding: 0;
-}
-
-.view-com{
-  height: 100vh;
-}
-
-#enviar{
-  margin-left: 200px;
+  box-sizing: border-box;
 }
